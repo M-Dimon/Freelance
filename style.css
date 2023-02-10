@@ -2,11 +2,15 @@
   @import url("https://use.typekit.net/wrr4vje.css");
   
 body {
-    padding: 0;
-    display: grid;
+    padding: 1vw;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
     align-content: center;
     justify-content: center;
-  }
+    background-image: url(img/Background.png);
+}
+
 h1 {
 
     font-family: "jaf-domus-titling-web", sans-serif;
@@ -28,34 +32,13 @@ p {
     font-style: normal; 
 }
 
-.background {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    position: relative;
-}
-
-.background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; height: 100%;
-    background-color: black;
-    background-image: url(img/Background.png);
-    background-size: cover;
-    filter: opacity(80%);
-}
-
-/* Bruges på alle sider */
-.menu {
-    position: absolute;
-    top: 7.1vh;
-    right: 5vw;
+.top-boks {
+    display: flex;
+    padding: 1vw;
 }
 
 .menu-button {
+    margin: 1vw;
     padding: 1vw;
     border: 5px solid #2D2D2D;
     border-radius: 10px;
@@ -64,8 +47,9 @@ p {
 }
 
 .page-content {
-    top: 5vh;
-    position: absolute;
+    top: 5vw;
+    align-content: center;
+    justify-content: center;
 }
 
 .header {
@@ -91,16 +75,21 @@ p {
     justify-content: center;
 }
 
-/* Forside CSS */
-.indholds-boks {
+.facebook {
     width: 80vw;
     margin: 3vw;
     text-align: center;
     justify-content: center;
 }
 
-/* Logget ind forside CSS */
-.event-kode {
+
+.boks {
+    margin: 1vw;
+    text-align: center;
+    justify-content: center;
+}
+
+.indhold {
     width: 20vw;
     border: 5px solid #2D2D2D;
     border-radius: 10px;
@@ -110,24 +99,63 @@ p {
     justify-content: center;
 }
 
-.input {
-    width: 100px;
-    height: 20px;
+.knap {
     text-align: center;
-    justify-content: center;
+    justify-content: center; 
 }
 
+button {
+    width: 10vw;
+    height: 3vw;
+    color: #FFFFFF;
+    background-color: #2A4F87;
+    border-radius: 10px;
+    border: 5px solid #203B65;
+    font-size: 1vw;
+    font-family: "jaf-domus-titling-web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
+.fb-img {
+    margin: 1vw;
+    justify-content: center;
+    text-align: center;
+}
 
-/*
+.fb-img img {
+    width: 5vw;
+    border-radius: 50vw;
+    border: 5px solid #203B65;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-place {
+    margin: 1vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-place img {
+    width: 80vw;
+    border: 5px solid #2D2D2D;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+/* font størrelser
+Regular:
 font-family: "jaf-domus-titling-web", sans-serif;
 font-weight: 400;
 font-style: normal;
 
+Bold:
 font-family: "jaf-domus-titling-web", sans-serif;
 font-weight: 700;
 font-style: normal;
 
+Extra Bold:
 font-family: "jaf-domus-titling-web", sans-serif;
 font-weight: 800;
 font-style: normal;*/
